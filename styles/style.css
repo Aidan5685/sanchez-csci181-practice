@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4f5565;
+  background-color: #edf0f5;
+}
+
+#page-header {
+  background-color: #1f2933;
+  padding: 1rem 2rem;
+}
+
+#page-header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#page-header nav li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+#page-header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#page-header nav a:hover {
+  text-decoration: underline;
+}
+
+#hero {
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 450px;
+  padding-top: 140px;
+
+  color: white;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.cta-button:hover {
+  background-color: #1e4ed8;
+}
+
+main {
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+p {
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #2563eb;
+}
