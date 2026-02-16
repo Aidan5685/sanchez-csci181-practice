@@ -21,9 +21,13 @@ body {
   background-color: #edf0f5;
 }
 
+/* Sticky Header */
 #page-header {
   background-color: #1f2933;
   padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 #page-header nav ul {
@@ -115,6 +119,20 @@ ul {
 
 a {
   color: #2563eb;
+}
+
+.project-list {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.project-card {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 form div {
