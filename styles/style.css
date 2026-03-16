@@ -21,7 +21,6 @@ body {
   background-color: #edf0f5;
 }
 
-/* Sticky Header */
 #page-header {
   background-color: #1f2933;
   padding: 1rem 2rem;
@@ -49,6 +48,28 @@ body {
 
 #page-header nav a:hover {
   text-decoration: underline;
+}
+
+nav a[aria-current="page"] {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.skip-link {
+  position: fixed;
+  left: -9999px;
+  top: 1rem;
+  background-color: #ffffff;
+  color: #111827;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  z-index: 3000;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  outline: 3px solid #2563eb;
 }
 
 #hero {
@@ -174,3 +195,15 @@ td {
 
 thead th {
   background-color: #e5e7eb;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
