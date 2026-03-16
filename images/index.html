@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Aidan Sanchez Portfolio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header id="page-header">
+      <img
+        src="./images/logo.png"
+        alt="Personal logo"
+        width="100"
+        height="100"
+      />
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <h1>Building Clean, Simple Websites</h1>
+        <a href="#" class="cta-button">View My Work</a>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <ul class="project-list">
+          <li>
+            <article class="project-card">
+              <h3>
+                <a href="#" aria-label="View project: Weather App">
+                  Weather App
+                </a>
+              </h3>
+              <p>
+                A simple weather dashboard that displays real-time weather data
+                for any city using an external API.
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article class="project-card">
+              <h3>
+                <a href="#" aria-label="View project: Study Planner">
+                  Study Planner
+                </a>
+              </h3>
+              <p>
+                A productivity tool that helps students organize assignments,
+                set deadlines, and track academic progress.
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article class="project-card">
+              <h3>
+                <a href="#" aria-label="View project: Budget Tracker">
+                  Budget Tracker
+                </a>
+              </h3>
+              <p>
+                A personal finance tracker that allows users to monitor income,
+                expenses, and monthly savings goals.
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mt-12">
+        <h2 class="text-center mb-8">Student Testimonials</h2>
+
+        <ul
+          class="list-none ml-0 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <li>
+            <figure class="relative rounded-2xl bg-white p-6 shadow-md">
+              <svg
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                focusable="false"
+                class="absolute top-4 left-4 h-8 w-8 fill-current text-gray-200"
+              >
+                <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+              </svg>
+
+              <blockquote class="pt-6">
+                <p class="text-base leading-7 text-gray-600">
+                  CSCI 181 completely changed how I think about the internet. I
+                  finally understand the "magic" behind the websites I use every
+                  day.
+                </p>
+              </blockquote>
+
+              <figcaption class="mt-6 flex items-center">
+                <img
+                  src="./images/profile-1.png"
+                  alt=""
+                  class="mr-4 h-12 w-12 rounded-full object-cover"
+                />
+                <div>
+                  <p class="mb-0 font-medium text-gray-900">Leah Martinez</p>
+                  <p class="mb-0 text-sm text-gray-500">
+                    Freshman, Computer Science
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure class="relative rounded-2xl bg-white p-6 shadow-md">
+              <svg
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                focusable="false"
+                class="absolute top-4 left-4 h-8 w-8 fill-current text-gray-200"
+              >
+                <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+              </svg>
+
+              <blockquote class="pt-6">
+                <p class="text-base leading-7 text-gray-600">
+                  Now I have the confidence to build my own website. The
+                  instructor was really supportive and the material was always
+                  relevant.
+                </p>
+              </blockquote>
+
+              <figcaption class="mt-6 flex items-center">
+                <img
+                  src="./images/profile-2.png"
+                  alt=""
+                  class="mr-4 h-12 w-12 rounded-full object-cover"
+                />
+                <div>
+                  <p class="mb-0 font-medium text-gray-900">Marcus Lee</p>
+                  <p class="mb-0 text-sm text-gray-500">
+                    Freshman, Software Engineering
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure class="relative rounded-2xl bg-white p-6 shadow-md">
+              <svg
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                focusable="false"
+                class="absolute top-4 left-4 h-8 w-8 fill-current text-gray-200"
+              >
+                <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+              </svg>
+
+              <blockquote class="pt-6">
+                <p class="text-base leading-7 text-gray-600">
+                  I learned so much about the principles of design and
+                  usability. I did not know coding could be so fun and creative.
+                </p>
+              </blockquote>
+
+              <figcaption class="mt-6 flex items-center">
+                <img
+                  src="./images/profile-3.png"
+                  alt=""
+                  class="mr-4 h-12 w-12 rounded-full object-cover"
+                />
+                <div>
+                  <p class="mb-0 font-medium text-gray-900">Sofia Kim</p>
+                  <p class="mb-0 text-sm text-gray-500">Junior, Media Arts</p>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+
+        <form>
+          <div>
+            <label for="name">Name</label><br />
+            <input type="text" id="name" name="name" />
+          </div>
+
+          <div>
+            <label for="email">Email</label><br />
+            <input type="email" id="email" name="email" />
+          </div>
+
+          <div>
+            <label for="message">Message</label><br />
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+
+          <button type="submit">Send Your Message</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
