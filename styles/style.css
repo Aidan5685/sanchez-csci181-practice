@@ -1,5 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+:root {
+  --bg: #edf0f5;
+  --text: #4f5565;
+  --header-bg: #1f2933;
+  --header-text: #ffffff;
+  --surface: #ffffff;
+  --link: #2563eb;
+  --link-hover: #1e4ed8;
+  --border: #ccc;
+  --table-head: #e5e7eb;
+  --button-bg: #ffffff;
+  --button-text: #111827;
+}
+
+body.dark {
+  --bg: #111827;
+  --text: #e5e7eb;
+  --header-bg: #0f172a;
+  --header-text: #f9fafb;
+  --surface: #1f2937;
+  --link: #93c5fd;
+  --link-hover: #bfdbfe;
+  --border: #4b5563;
+  --table-head: #374151;
+  --button-bg: #374151;
+  --button-text: #f9fafb;
+}
+
 html {
   font-size: 16px;
   box-sizing: border-box;
@@ -17,12 +45,12 @@ body {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  color: #4f5565;
-  background-color: #edf0f5;
+  color: var(--text);
+  background-color: var(--bg);
 }
 
 #page-header {
-  background-color: #1f2933;
+  background-color: var(--header-bg);
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -41,7 +69,7 @@ body {
 }
 
 #page-header nav a {
-  color: white;
+  color: var(--header-text);
   text-decoration: none;
   font-weight: 500;
 }
@@ -53,6 +81,17 @@ body {
 nav a[aria-current="page"] {
   text-decoration: underline;
   font-weight: 700;
+}
+
+#theme-toggle {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .skip-link {
@@ -95,7 +134,7 @@ nav a[aria-current="page"] {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.5rem;
-  background-color: #2563eb;
+  background-color: var(--link);
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -103,7 +142,7 @@ nav a[aria-current="page"] {
 }
 
 .cta-button:hover {
-  background-color: #1e4ed8;
+  background-color: var(--link-hover);
 }
 
 main {
@@ -140,7 +179,7 @@ main {
   }
 
   a {
-    color: #2563eb;
+    color: var(--link);
   }
 }
 
@@ -151,7 +190,7 @@ main {
 }
 
 .project-card {
-  background-color: white;
+  background-color: var(--surface);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 12px;
@@ -168,6 +207,9 @@ textarea {
   padding: 0.4rem;
   font-family: inherit;
   font-size: 1rem;
+  color: var(--text);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
 }
 
 textarea {
@@ -188,13 +230,13 @@ table {
 
 th,
 td {
-  border: 1px solid #ccc;
+  border: 1px solid var(--border);
   padding: 0.75rem;
   text-align: left;
 }
 
 thead th {
-  background-color: #e5e7eb;
+  background-color: var(--table-head);
 }
 
 @media (prefers-reduced-motion: reduce) {
