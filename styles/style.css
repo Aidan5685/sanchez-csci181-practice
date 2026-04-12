@@ -149,6 +149,44 @@ main {
   padding: 2rem;
 }
 
+.weather-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#weather-output {
+  margin-top: 1rem;
+}
+
+.weather-loading {
+  color: #6b7280;
+}
+
+.weather-error {
+  color: #dc2626;
+}
+
+.weather-fallback {
+  color: var(--text);
+}
+
+.weather-temp {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem;
+  color: #80002a;
+}
+
+.weather-forecast {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
 @layer base {
   h1 {
     font-size: 2.4rem;
